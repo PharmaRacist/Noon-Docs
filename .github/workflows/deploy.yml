@@ -2,26 +2,30 @@ name: Deploy VitePress site to Pages
 
 on:
   push:
-    branches: [main] # Make sure this matches your branch name (main or master)
+    branches: [main]
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
+# This tells the runner to use the newer Node engine for the actions themselves
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4 # Note: Check for v5 if available by June
         with:
-          fetch-depth: 0 # Not required but recommended for git metadata
+          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24 # Use the current LTS/Required version
           cache: "npm"
 
       - name: Install dependencies
@@ -33,7 +37,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: docs/.vitepress/dist # This is where VitePress saves the build
+          path: docs/.vitepress/dist
 
       - name: Deploy to GitHub Pages
         id: deployment

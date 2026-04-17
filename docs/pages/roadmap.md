@@ -1,0 +1,25 @@
+# Current State & Roadmap
+
+- <Badge type="tip" text="Done" /> **Docs**
+  - <Badge type="warning" text="WIP" /> ~~Website~~ ?
+- <Badge type="warning" text="WIP" /> **Hot Reload**
+- <Badge type="tip" text="Done" /> **Singletons**
+  - <Badge type="warning" text="WIP" /> Persistence Convenient Solution
+  - <Badge type="tip" text="Done" /> Color Palettes
+  - <Badge type="tip" text="Done" /> Sidebar Modules (adds new sidebar contents)
+  - <Badge type="tip" text="Done" /> Dock
+  - <Badge type="tip" text="Done" /> Beam
+    - <Badge type="tip" text="Done" /> Bash Commands
+    - <Badge type="tip" text="Done" /> Qml Functions
+- <Badge type="warning" text="WIP" /> **Plugins GUI Easy Installer**
+  - <Badge type="tip" text="Done" /> CLI Backend
+- <Badge type="danger" text="Planned" /> **Desktop Widgets** (KDE API Workarounds)
+- <Badge type="warning" text="WIP" /> **Bars**
+  - <Badge type="warning" text="WIP" /> Bar Modules
+  - <Badge type="warning" text="WIP" /> Bar (v/h)Map Presets for Dynamic bars
+- <Badge type="warning" text="WIP" /> **Dialog Components**
+- <Badge type="warning" text="WIP" /> **Routines & Automations**
+- <Badge type="tip" text="Done" /> ~~New Ambient Sounds~~
+- <Badge type="warning" text="WIP" /> **AI Skills - Functions**
+- <Badge type="warning" text="WIP" /> **Complete Panels Alterations**
+- <Badge type="warning" text="WIP" /> **Persistence Workarounds**

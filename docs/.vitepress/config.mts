@@ -1,8 +1,8 @@
 import { defineConfig } from "vitepress";
 export default defineConfig({
-  title: "Noon Plugins",
+  title: "Project Noon",
   base: "/Noon-Docs/",
-  description: "Noon Plugins Documentation",
+  description: "Documentation",
   themeConfig: {
     nav: [
       { text: "Home", link: "/" },
@@ -11,22 +11,41 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: "Guides",
+        text: "Showcase",
         items: [
-          { text: "Getting Started", link: "/guide/index" },
-          { text: "Manifest", link: "/guide/manifest" },
-          { text: "CLI", link: "/guide/cli" },
-          { text: "IPC", link: "/guide/ipc" },
+          { text: "Screenshots", link: "/pages/screenshots" },
+          { text: "Videos", link: "/pages/videos" },
         ],
       },
       {
-        text: "Integrations",
+        text: "Usage",
+        items: [
+          { text: "Installation", link: "/guide/installation" },
+          { text: "Tips", link: "/guide/tips" },
+          { text: "IPC", link: "/guide/ipc" },
+          { text: "FAQ", link: "/guide/faq" },
+          { text: "Removal", link: "/guide/remove" },
+        ],
+      },
+      {
+        text: "Plugins",
         items: [
           { text: "Sidebar", link: "/plugins/sidebar" },
           { text: "Dock", link: "/plugins/dock" },
           { text: "Beam", link: "/plugins/beam" },
           { text: "Palettes", link: "/plugins/palettes" },
         ],
+      },
+      {
+        text: "Create",
+        items: [
+          { text: "Guidelines", link: "/plugins/guidelines" },
+          { text: "Manifest", link: "/plugins/manifest" },
+        ],
+      },
+      {
+        text: "TOS",
+        items: [{ text: "License", link: "/pages/license" }],
       },
     ],
 

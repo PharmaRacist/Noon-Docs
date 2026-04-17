@@ -29,15 +29,10 @@ jobs:
         with:
           node-version: 22
           cache: "npm"
-      - name: Debug
-        run: |
-          node --version
-          npm --version
-          cat package.json
       - name: Install dependencies
-        run: npm install
+        run: npm ci
       - name: Build with VitePress
-        run: npm run docs:build
+        run: npx vitepress build docs
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

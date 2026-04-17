@@ -5,7 +5,7 @@ hero:
   name: "Noon Plugins"
   tagline: Elevate your experience
   image:
-    src: /assets/icons/plugins.svg
+    src: ./../assets/icons/plugins.svg
   actions:
     - theme: brand
       text: Get Started

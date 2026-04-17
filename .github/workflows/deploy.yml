@@ -4,41 +4,39 @@ on:
   push:
     branches: [main]
 
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# This tells the runner to use the newer Node engine for the actions themselves
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4 # Note: Check for v5 if available by June
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 24 # Use the current LTS/Required version
+          node-version: 24
           cache: "npm"
-
       - name: Install dependencies
         run: npm install
-
       - name: Build with VitePress
         run: npm run docs:build
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: docs/.vitepress/dist
-
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

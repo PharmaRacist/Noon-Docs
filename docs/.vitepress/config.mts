@@ -1,7 +1,7 @@
 import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "Noon Plugins",
-  base: 'Noon'
+  base: "Noon",
   description: "Noon Plugins Documentation",
   themeConfig: {
     nav: [

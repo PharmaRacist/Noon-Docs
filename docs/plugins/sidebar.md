@@ -2,7 +2,7 @@
 check Avilable Plugins at [Plugins Repo](https://github.com/pharmaracist/Noon-plugins)
 ## Manifest
 You dont need to fill all default are fine.
-The uncommented example is at [Plugins Examples](/exmples)
+The uncommented example is at [Plugins Examples](/examples)
 ### Example:
 ``` json
 {

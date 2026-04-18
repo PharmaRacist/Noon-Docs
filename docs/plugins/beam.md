@@ -4,7 +4,7 @@ check Avilable Plugins at [Plugins Repo](https://github.com/pharmaracist/Noon-pl
 - beam is just a textbox with a prefix assaigned functions, This means that we can implement the desired output and actions needed
 - beam can make use of shell scripting evaluated in a js function through specific syntax but it's very easy to implement a new plugin through a cli tools
 - unlike other plugins beam doesn't need an entry since its not loaded 
-The uncommented example is at [Plugins Examples](/exmples)
+The uncommented example is at [Plugins Examples](/examples)
 ### Example:
 ``` json
 {

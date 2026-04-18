@@ -1,6 +1,6 @@
 # Guidelines
 
-An overview of how to structure and organize your extensions for the Noon Shell.
+An overview of how to structure and organize your plugins for the Noon.
 
 ::: info Core Principle
 Plugins are organized by **Group** (the target system) and **Name** (the specific extension).

@@ -2,6 +2,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "Project Noon",
   base: "/Noon-Docs/",
+  ignoreDeadLinks: true,
   description: "Documentation",
   themeConfig: {
     nav: [

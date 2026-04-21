@@ -124,10 +124,6 @@ watch(lightbox, (open) => {
                         />
                         <div class="lb-footer">
                             <span class="lb-title">{{ items[cur].title }}</span>
-                            <span class="lb-hint">
-                                <span class="ms">keyboard</span> ← → to navigate
-                                · esc to close
-                            </span>
                         </div>
                     </div>
                 </div>
@@ -364,25 +360,6 @@ watch(lightbox, (open) => {
     font-weight: 550;
     color: #fff;
     letter-spacing: 0.01em;
-}
-
-.lb-hint {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 11px;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.45);
-    letter-spacing: 0.02em;
-    white-space: nowrap;
-}
-.lb-hint .ms {
-    font-size: 13px;
-    font-variation-settings:
-        "FILL" 0,
-        "wght" 300,
-        "GRAD" 0,
-        "opsz" 20;
 }
 
 .lb-enter-active,

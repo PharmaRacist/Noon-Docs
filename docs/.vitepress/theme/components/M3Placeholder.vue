@@ -81,15 +81,13 @@ const shapePath = computed(() => {
 </template>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@8..144,100..900&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap");
-
 .ph-wrap {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 60vh;
     padding: 2rem;
-    font-family: "Google Sans Flex", sans-serif;
+    font-family: "main", sans-serif;
 }
 
 .ph-inner {
@@ -126,7 +124,7 @@ const shapePath = computed(() => {
 .ph-icon {
     position: relative;
     z-index: 1;
-    font-family: "Material Symbols Rounded";
+    font-family: "symbols";
     font-style: normal;
     font-size: 72px;
     font-variation-settings:

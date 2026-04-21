@@ -5,6 +5,7 @@ export default defineConfig({
   ignoreDeadLinks: true,
   description: "Documentation",
   themeConfig: {
+    logo: "assets/icons/logo-symbolic.svg",
     nav: [
       { text: "Home", link: "/" },
       { text: "Documentation", link: "/plugins/" },
@@ -44,8 +45,11 @@ export default defineConfig({
         ],
       },
       {
-        text: "TOS",
-        items: [{ text: "License", link: "/pages/license" }],
+        text: "Other",
+        items: [
+          { text: "Credits", link: "/pages/credits" },
+          { text: "License", link: "/pages/license" },
+        ],
       },
     ],
 

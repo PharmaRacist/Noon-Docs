@@ -6,19 +6,20 @@ The uncommented example is at [Plugins Examples](/examples)
 ### Example:
 ``` json
 {
-  "name": "",          // Plugin Name Called By IPC
-  "enabled": true,     // Changed by the plugins_manager
+  "name": "",               // Plugin Name Called By IPC
+  "pluginGroup": "sidebar"  // NEEDED for plugin archive installation 
+  "enabled": true,          // Changed by the plugins_manager
   "mentainer": "",
-  "detachable":false,  // To be dragged outside the sidebar as APP
-  "incubatable":false, // Incubation ability with Right mouse click 
-  "expandable": false, // Expandtion ability With CTRL + 0
-  "stealth":false,     // Doesnt appear in sidebar but appears on IPC call
-  "searchable": false, // Builtin searchbar (NEEDS property called searchQuery)
+  "detachable":false,       // To be dragged outside the sidebar as APP
+  "incubatable":false,      // Incubation ability with Right mouse click 
+  "expandable": false,      // Expandtion ability With CTRL + 0
+  "stealth":false,          // Doesnt appear in sidebar but appears on IPC call
+  "searchable": false,      // Builtin searchbar (NEEDS property called searchQuery)
   "icon": "", 
   "activeIcon": "",
   "baseSize": -1,
   "expandSize":-1,
-  "shell": "Noon",     // The shell which it appears exclusively in
+  "shell": "Noon",          // The shell which it appears exclusively in
   "entry": "@plugins/Entry.qml",
   "shape": "Cookie12Sided"
   "singletons": [],

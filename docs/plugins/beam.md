@@ -9,6 +9,7 @@ The uncommented example is at [Plugins Examples](/examples)
 ``` json
 {
   "name": "",          // Plugin Name Called By IPC
+  "pluginGroup": "beam"  // NEEDED for plugin archive installation 
   "enabled": true,     // Changed by the plugins_manager
   "mentainer": "",
   "prefix": "@",       // the needed prefix symbol for action

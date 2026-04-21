@@ -1,5 +1,7 @@
 <script setup>
 import { ref, onMounted, onUnmounted, watch } from "vue";
+import { withBase } from "vitepress";
+
 const props = defineProps(["items"]);
 const cur = ref(0);
 const lightbox = ref(false);
@@ -60,13 +62,13 @@ watch(lightbox, (open) => {
                 >
                     <video
                         v-if="item.video"
-                        :src="item.video"
+                        :src="withBase(item.video)"
                         muted
                         loop
                         autoplay
                         playsinline
                     />
-                    <img v-else :src="item.img" :alt="item.title" />
+                    <img v-else :src="withBase(item.img)" :alt="item.title" />
                     <div
                         v-if="i !== cur"
                         class="veil"
@@ -75,7 +77,7 @@ watch(lightbox, (open) => {
                 </div>
             </div>
         </div>
-        <div class="title">{{ src = items[cur].title }}</div>
+        <div class="title">{{ items[cur].title }}</div>
         <div class="controls">
             <div class="btn-group">
                 <button
@@ -111,7 +113,7 @@ watch(lightbox, (open) => {
                     <div class="lb-box" @click.stop>
                         <video
                             v-if="items[cur].video"
-                            :src="items[cur].video"
+                            :src="withBase(items[cur].video)"
                             muted
                             loop
                             autoplay
@@ -119,7 +121,7 @@ watch(lightbox, (open) => {
                         />
                         <img
                             v-else
-                            :src="items[cur].img"
+                            :src="withBase(items[cur].img)"
                             :alt="items[cur].title"
                         />
                         <div class="lb-footer">
@@ -133,15 +135,12 @@ watch(lightbox, (open) => {
 </template>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@8..144,100..900&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap");
-
 .wrap {
     padding: 2rem 0 1.5rem;
     overflow: hidden;
     width: 100%;
-    font-family: "Google Sans Flex", sans-serif;
+    font-family: "main", sans-serif;
 }
-
 .stage {
     position: relative;
     height: 440px;
@@ -149,7 +148,6 @@ watch(lightbox, (open) => {
     align-items: center;
     justify-content: center;
 }
-
 .slide {
     position: absolute;
     width: 70%;
@@ -178,7 +176,6 @@ watch(lightbox, (open) => {
     transform: scale(0.5);
     pointer-events: none;
 }
-
 .media {
     position: relative;
     border-radius: 20px;
@@ -197,7 +194,6 @@ watch(lightbox, (open) => {
     object-fit: cover;
     display: block;
 }
-
 .veil {
     position: absolute;
     inset: 0;
@@ -208,15 +204,12 @@ watch(lightbox, (open) => {
 .veil:hover {
     background: rgba(0, 0, 0, 0.28);
 }
-
 .ms {
-    font-family: "Material Symbols Rounded";
+    font-family: symbols;
     font-style: normal;
     line-height: 1;
-    -webkit-font-smoothing: antialiased;
     user-select: none;
 }
-
 .controls {
     display: flex;
     align-items: center;
@@ -237,7 +230,6 @@ watch(lightbox, (open) => {
     align-items: center;
     gap: 3px;
 }
-
 .gbtn {
     display: flex;
     align-items: center;
@@ -274,7 +266,6 @@ watch(lightbox, (open) => {
         "GRAD" 0,
         "opsz" 24;
 }
-
 .dots {
     display: flex;
     align-items: center;
@@ -298,7 +289,6 @@ watch(lightbox, (open) => {
     border-radius: 100px;
     background: var(--vp-c-brand-1);
 }
-
 .counter {
     font-size: 12px;
     font-weight: 500;
@@ -307,7 +297,6 @@ watch(lightbox, (open) => {
     min-width: 32px;
     text-align: center;
 }
-
 .lb-backdrop {
     position: fixed;
     inset: 0;
@@ -320,7 +309,6 @@ watch(lightbox, (open) => {
     justify-content: center;
     padding: 32px;
 }
-
 .lb-box {
     position: relative;
     width: 100%;
@@ -337,7 +325,6 @@ watch(lightbox, (open) => {
     object-fit: contain;
     background: #000;
 }
-
 .lb-footer {
     position: absolute;
     bottom: 0;
@@ -354,14 +341,12 @@ watch(lightbox, (open) => {
     justify-content: space-between;
     gap: 12px;
 }
-
 .lb-title {
     font-size: 16px;
     font-weight: 550;
     color: #fff;
     letter-spacing: 0.01em;
 }
-
 .lb-enter-active,
 .lb-leave-active {
     transition: opacity 0.22s ease;
@@ -383,7 +368,6 @@ watch(lightbox, (open) => {
     transform: scale(0.96);
     opacity: 0;
 }
-
 @media (max-width: 600px) {
     .slide {
         width: 84%;

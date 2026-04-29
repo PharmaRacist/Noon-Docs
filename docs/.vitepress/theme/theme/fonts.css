@@ -4,20 +4,20 @@
 }
 @font-face {
     font-family: "symbols";
-    src: url("./../../../assets/fonts/M3Icons.ttf") format("truetype");
+    src: url("/Noon-Docs/assets/fonts/M3Icons.ttf") format("truetype");
 }
 @font-face {
     font-family: "main";
-    src: url("./../../../assets/fonts/GoogleSansFlex.ttf") format("truetype");
+    src: url("/Noon-Docs/assets/fonts/GoogleSansFlex.ttf") format("truetype");
 }
 @font-face {
     font-family: "variable";
-    src: url("./../../../assets/fonts/GoogleSansFlex.ttf") format("truetype");
+    src: url("/Noon-Docs/assets/fonts/GoogleSansFlex.ttf") format("truetype");
 }
 @font-face {
     font-family: "monospace";
     font-size: 14;
     font-weight: 600;
     font-variant-ligatures: contextual;
-    src: url("./../../../assets/fonts/Iosevka.ttf") format("truetype");
+    src: url("/Noon-Docs/assets/fonts/Iosevka.ttf") format("truetype");
 }

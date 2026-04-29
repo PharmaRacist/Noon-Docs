@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "Noon"
   text: "by Pharmaracist"
-  tagline: THE Hyprland Experince
+  tagline: THE Hyprland Experience
   image:
     src: assets/icons/logo.svg
   actions:
@@ -21,3 +21,12 @@ features:
     link: /pages/screenshots
     details: View Capabilities
 ---
+
+## About Project Noon
+Project Noon is a customizable, plugin-based desktop shell suite designed for the Hyprland compositor. It allows users to integrate their digital life directly into their Linux desktop.
+
+### OAuth & Data Usage
+Noon uses Google OAuth to enable modules like media controls and calendar widgets. **All data retrieved via Google APIs is stored locally on your machine** and is used solely to display information within your shell. We do not collect or transmit your personal data to any external servers.
+
+### Legal
+[Privacy Policy](/pages/privacy) | [Terms of Service](/pages/tos)

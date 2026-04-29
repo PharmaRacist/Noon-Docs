@@ -4,6 +4,15 @@ export default defineConfig({
   base: "/Noon-Docs/",
   ignoreDeadLinks: true,
   description: "Documentation",
+  head: [
+    [
+      "meta",
+      {
+        name: "google-site-verification",
+        content: "eLroC6iMEpl0lr7-zp5WKAYMKrfdAySSCv2NqtSeMEQ",
+      },
+    ],
+  ],
   themeConfig: {
     logo: "assets/icons/logo-symbolic.svg",
     nav: [

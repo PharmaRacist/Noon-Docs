@@ -27,6 +27,3 @@ Project Noon is a customizable, plugin-based desktop shell suite designed for th
 
 ### OAuth & Data Usage
 Noon uses Google OAuth to enable modules like media controls and calendar widgets. **All data retrieved via Google APIs is stored locally on your machine** and is used solely to display information within your shell. We do not collect or transmit your personal data to any external servers.
-
-### Legal
-[Privacy Policy](/pages/privacy) | [Terms of Service](/pages/tos)

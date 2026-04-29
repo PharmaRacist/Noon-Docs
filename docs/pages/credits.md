@@ -22,7 +22,15 @@ const coreTeam = [
     title: 'Lead Developer',
     desc: 'Architect of Project Project Noon and its ecosystem.',
     links: [{ icon: 'github', link: 'https://github.com/pharmaracist' }]
+  },
+  {
+    avatar: 'https://github.com/aaabbbfff.png',
+    name: 'Annoon',
+    title: 'My GF',
+    desc: 'Emotional Support 🫠.',
+    links: [{ icon: 'github', link: 'https://github.com/aaabbbfff' }]
   }
+
 ]
 
 const inspirations = [

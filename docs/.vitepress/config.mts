@@ -18,7 +18,7 @@ export default defineConfig({
           { text: "Screenshots", link: "/pages/screenshots" },
           { text: "Videos", link: "/pages/videos" },
           { text: "Installation", link: "/guide/installation" },
-          { text: "Removal", link: "/guide/remove" },
+          { text: "Nvidia", link: "/guide/nvidia" },
           { text: "FAQ", link: "/guide/faq" },
         ],
       },
@@ -49,12 +49,12 @@ export default defineConfig({
         items: [
           { text: "Credits", link: "/pages/credits" },
           { text: "License", link: "/pages/license" },
+          { text: "Privacy Policy", link: "/pages/privacy" },
+          { text: "Terms of Service", link: "/pages/tos" },
         ],
       },
     ],
 
-    socialLinks: [
-      { icon: "github", link: "https://github.com/pharmaracist/noon" },
-    ],
+    socialLinks: [{ icon: "github", link: "https://github.com/HyprNoon" }],
   },
 });

@@ -6,7 +6,7 @@ hero:
   text: "by Pharmaracist"
   tagline: THE Hyprland Experience
   image:
-    src: assets/icons/logo.svg
+    src: /Noon-Docs/assets/icons/logo.svg
   actions:
     - theme: brand
       text: Documentation

@@ -27,7 +27,7 @@ const coreTeam = [
     avatar: 'https://github.com/aaabbbfff.png',
     name: 'Annoon',
     title: 'My GF',
-    desc: 'Emotional Support 🫠.',
+    desc: 'Emits Positive Energy & Gives Emotional Support 💕.',
     links: [{ icon: 'github', link: 'https://github.com/aaabbbfff' }]
   }
 
